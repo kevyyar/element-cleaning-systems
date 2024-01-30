@@ -1,0 +1,27 @@
+.button {
+    background-color: var(--green);
+    color: var(--white);
+    font-size: var(--font-size-md);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color .2s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--alt-green);
+}
+
+@media (max-width: 768px) {
+    .button {
+        background-color: var(--white);
+        color: var(--green);
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .button {
+        font-size: var(--font-size-base);
+    }
+}

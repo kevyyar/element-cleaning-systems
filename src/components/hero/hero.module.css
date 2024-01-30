@@ -1,0 +1,22 @@
+.hero {
+    z-index: 4;
+}
+
+.heading {
+    font-size: 78px;
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .heading {
+        text-align: center;
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .heading {
+        text-align: center;
+        font-size: 68px;
+    }
+}
