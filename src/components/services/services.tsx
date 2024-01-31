@@ -9,8 +9,6 @@ import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 import { Josefin_Sans } from "next/font/google";
 import { Button } from "@/components";
-import { TfiAngleRight } from "react-icons/tfi";
-import { TfiAngleLeft } from "react-icons/tfi";
 
 interface CardProps {
   id: string;
