@@ -26,7 +26,6 @@ export function Navbar() {
   };
 
   const onOpenMobileMenu = () => {
-    console.log("opened");
     setOpenMobileMenu(!openMobileMenu);
   };
 
@@ -42,7 +41,7 @@ export function Navbar() {
     <nav className={navbarClass}>
       <Link href={"/"}>
         <Image
-          src={"/ecs-logo-text.svg"}
+          src={"/images/ecs-logo-text.svg"}
           width={130}
           height={130}
           alt={"logo"}

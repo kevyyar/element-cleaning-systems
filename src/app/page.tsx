@@ -1,39 +1,11 @@
-import { VideoBg } from "@/components";
+import { Services, VideoBg } from "@/components";
+import { cleaningServices } from "@/constants/constants";
 
 export default function Home() {
   return (
     <>
       <VideoBg />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      hello
+      <Services cards={cleaningServices} />
     </>
   );
 }

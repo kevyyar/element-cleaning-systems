@@ -5,6 +5,7 @@ import { Josefin_Sans } from "next/font/google";
 
 interface Props {
   href: string;
+  className?: string;
   children: React.ReactNode;
 }
 
@@ -13,9 +14,12 @@ const josefin = Josefin_Sans({
   weight: ["500"],
 });
 
-export function Button({ href, children }: Props) {
+export function Button({ href, className, children }: Props) {
   return (
-    <Link className={`${styles.button} ${josefin.className}`} href={href}>
+    <Link
+      className={`${styles.button} ${josefin.className} ${className}`}
+      href={href}
+    >
       {children}
     </Link>
   );

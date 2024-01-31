@@ -3,3 +3,4 @@ export * from "./navbar/navbar";
 export * from "./nav-link/nav-link";
 export * from "./button/button";
 export * from "./hero/hero";
+export * from "./services/services";
