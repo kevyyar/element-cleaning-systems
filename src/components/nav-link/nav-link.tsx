@@ -16,13 +16,7 @@ export function NavLink({ scrolled }: Props) {
   return (
     <div className={josefin.className}>
       {navbarLinks.map((link) => (
-        <Link
-          className={`${styles["nav-link"]} ${
-            scrolled ? styles["scrolled"] : ""
-          }`}
-          href={link.link}
-          key={link.id}
-        >
+        <Link className={styles["nav-link"]} href={link.link} key={link.id}>
           {link.children}
         </Link>
       ))}

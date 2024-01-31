@@ -29,6 +29,11 @@
     z-index: -1;
 }
 
+.button {
+    background-color: var(--white);
+    color: var(--green);
+}
+
 .mobile-menu.open {
     transform: translateY(0);
 }

@@ -24,8 +24,8 @@
 
 .nav-link:hover::after {
     background-color: var(--green);
-    width: 120%; /* Increase the width */
-    height: 120%; /* Increase the height */
+    width: 120%;
+    height: 120%;
     z-index: -1;
 }
 
@@ -33,18 +33,16 @@
     color: var(--white);
 }
 
-.scrolled {
-    color: black;
+@media (max-width: 1024px) {
+    .nav-link {
+        font-size: var(--font-size-base);
+        color: var(--text);
+    }
 }
 
 @media (max-width: 768px) {
     .nav-link {
         color: var(--white);
-    }
-}
-
-@media (max-width: 1024px) {
-    .nav-link {
-        font-size: var(--font-size-base);
+        margin-bottom: 20px;
     }
 }

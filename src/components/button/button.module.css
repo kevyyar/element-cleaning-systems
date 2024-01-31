@@ -12,14 +12,6 @@
     background-color: var(--alt-green);
 }
 
-@media (max-width: 768px) {
-    .button {
-        background-color: var(--white);
-        color: var(--green);
-        margin-top: 20px;
-    }
-}
-
 @media (max-width: 1024px) {
     .button {
         font-size: var(--font-size-base);

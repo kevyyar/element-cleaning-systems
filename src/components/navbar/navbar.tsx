@@ -58,7 +58,9 @@ export function Navbar() {
             <div>
               <NavLink scrolled={scrolled} />
             </div>
-            <Button href={"/contact"}>Request a Quote</Button>
+            <Button href={"/contact"} className={styles.button}>
+              Request a Quote
+            </Button>
           </div>
         </>
       ) : (

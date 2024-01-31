@@ -5,7 +5,7 @@ export function VideoBg() {
     <main className={styles["video-container"]}>
       <span className={styles["video-overlay"]} />
       <video
-        src={require("@/cleaning-vid.mp4")}
+        src={require("../../../public/cleaning-vid.mp4")}
         autoPlay
         muted
         loop
