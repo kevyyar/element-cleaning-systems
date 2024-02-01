@@ -1,15 +1,16 @@
 .button {
-    background-color: var(--green);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--text);
     font-size: var(--font-size-md);
     display: inline-block;
     padding: 10px 20px;
     border-radius: 8px;
-    transition: background-color .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .button:hover {
-    background-color: var(--alt-green);
+    background-color: var(--green);
+    color: var(--white);
 }
 
 @media (max-width: 1024px) {

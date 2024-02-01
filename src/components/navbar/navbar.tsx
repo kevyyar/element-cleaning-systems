@@ -2,46 +2,28 @@
 
 import styles from "./navbar.module.css";
 import { Button, NavLink } from "@/components";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useScreenSize } from "@/components/hooks/useScreenSize";
 import { TfiMenu } from "react-icons/tfi";
 
 export function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
   const { width } = useScreenSize();
 
   const isMobileMenu = width !== undefined && width < 768;
 
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 200) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
   const onOpenMobileMenu = () => {
     setOpenMobileMenu(!openMobileMenu);
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  }, []);
-
-  const navbarClass = `${styles["main-nav"]} ${
-    scrolled ? styles["scrolled"] : ""
-  }`;
-
   return (
-    <nav className={navbarClass}>
+    <nav className={styles["main-nav"]}>
       <Link href={"/"}>
         <Image
-          src={"/images/ecs-logo-text.svg"}
+          src={"/images/ecs-logo-white.svg"}
           width={130}
           height={130}
           alt={"logo"}
@@ -56,7 +38,7 @@ export function Navbar() {
             }`}
           >
             <div>
-              <NavLink scrolled={scrolled} />
+              <NavLink />
             </div>
             <Button href={"/contact"} className={styles.button}>
               Request a Quote
@@ -66,7 +48,7 @@ export function Navbar() {
       ) : (
         <>
           <div>
-            <NavLink scrolled={scrolled} />
+            <NavLink />
           </div>
           <Button href={"/contact"}>Request a Quote</Button>
         </>
