@@ -31,7 +31,12 @@ export function Navbar() {
       </Link>
       {isMobileMenu ? (
         <>
-          <TfiMenu size={28} color={"#3fc1aa"} onClick={onOpenMobileMenu} />
+          <TfiMenu
+            size={28}
+            color={"#3fc1aa"}
+            onClick={onOpenMobileMenu}
+            style={{ cursor: "pointer" }}
+          />
           <div
             className={`${styles["mobile-menu"]} ${
               openMobileMenu ? styles["open"] : ""
