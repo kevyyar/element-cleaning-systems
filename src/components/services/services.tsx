@@ -40,6 +40,10 @@ export function Services({ cards }: SwiperCarouselProps) {
           slidesPerView={3}
           spaceBetween={30}
           loop
+          grabCursor
+          autoplay={{
+            delay: 2000,
+          }}
           // navigation
           pagination={{ clickable: true }}
           breakpoints={{
