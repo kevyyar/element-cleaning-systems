@@ -16,6 +16,7 @@ interface CardProps {
   service: string;
   description: string;
   cta: string;
+  slug: string;
 }
 
 interface SwiperCarouselProps {
@@ -61,8 +62,11 @@ export function Services({ cards }: SwiperCarouselProps) {
                 <div className={styles.cardContent}>
                   <h3 className={styles.cardService}>{card.service}</h3>
                   <p className={styles.cardDescription}>{card.description}</p>
-                  <Button href={"/"} className={styles.ctaButton}>
-                    Learn More
+                  <Button
+                    href={`services/${card.slug}`}
+                    className={styles.ctaButton}
+                  >
+                    {card.cta}
                   </Button>
                 </div>
               </div>

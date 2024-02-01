@@ -1,3 +1,5 @@
+import { generateSlug } from "@/utils/generateSlug";
+
 export const navbarLinks = [
   { id: crypto.randomUUID(), link: "/home", children: "Home" },
   { id: crypto.randomUUID(), link: "/about", children: "About" },
@@ -54,4 +56,7 @@ export const cleaningServices = [
       "Experience unmatched cleanliness with our office cleaning and janitorial services. Our expert team ensures every workspace is spotless and hygienic, using eco-friendly products for daily upkeep.",
     cta: "learn more",
   },
-];
+].map((service) => ({
+  ...service,
+  slug: generateSlug(service.service),
+}));
