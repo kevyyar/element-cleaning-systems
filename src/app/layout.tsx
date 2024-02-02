@@ -3,7 +3,10 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["600", "300", "100"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",

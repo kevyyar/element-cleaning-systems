@@ -33,6 +33,10 @@
     transform: translateY(0);
 }
 
+.link:hover {
+    background-color: #FFD124;
+}
+
 @media (min-width: 768px) {
     .main-nav {
         justify-content: space-evenly;
