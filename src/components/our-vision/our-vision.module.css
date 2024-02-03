@@ -1,0 +1,48 @@
+.our-vision-container {
+  width: 100%;
+  /*padding: 20px;*/
+  /*margin: 6rem 0 10rem;*/
+  padding: 6rem 2rem;
+  text-align: center;
+  background-color: #f5efef;
+}
+
+.header {
+  font-size: 14px;
+  letter-spacing: .15rem;
+  color: var(--green);
+  margin-bottom: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: var(--font-size-xxxl);
+}
+
+.description {
+  line-height: 1.5;
+  font-size: var(--font-size-md);
+  margin: 30px 0;
+}
+
+.highlight {
+  font-size: var(--font-size-md);
+}
+
+.highlight > span {
+  color: var(--green);
+  font-weight: 600;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .our-vision-container {
+    padding: 10rem 2rem;
+  }
+
+  .description {
+    max-width: 600px;
+    margin: 30px auto;
+  }
+}

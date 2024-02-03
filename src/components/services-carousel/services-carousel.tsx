@@ -4,7 +4,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/bundle";
-import styles from "./services.module.css";
+import styles from "./services-carousel.module.css";
 import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 import { Josefin_Sans } from "next/font/google";
@@ -28,7 +28,7 @@ const josefin = Josefin_Sans({
   weight: ["500"],
 });
 
-export function Services({ cards }: SwiperCarouselProps) {
+export function ServicesCarousel({ cards }: SwiperCarouselProps) {
   return (
     <section className={styles.carouselContainer}>
       <h3 className={`${styles.header} ${josefin.className}`}>

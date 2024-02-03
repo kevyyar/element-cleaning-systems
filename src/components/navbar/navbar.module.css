@@ -39,8 +39,7 @@
 
 @media (min-width: 768px) {
     .main-nav {
+       padding: 15px 8px;
         justify-content: space-evenly;
-        padding: 10px 60px;
-        align-items: center;
     }
 }

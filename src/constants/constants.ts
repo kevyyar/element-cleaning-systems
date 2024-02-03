@@ -3,7 +3,7 @@ import { generateSlug } from "@/utils/generateSlug";
 export const navbarLinks = [
   { id: crypto.randomUUID(), link: "/home", children: "Home" },
   { id: crypto.randomUUID(), link: "/about", children: "About" },
-  { id: crypto.randomUUID(), link: "/services", children: "Services" },
+  { id: crypto.randomUUID(), link: "/services-carousel", children: "Services" },
   { id: crypto.randomUUID(), link: "/contact", children: "Contact" },
 ];
 
@@ -59,11 +59,11 @@ export const cleaningServices = [
   {
     id: crypto.randomUUID(),
     image: "/images/office-clean.jpeg",
-    service: "office cleaning janitorial services",
+    service: "office cleaning janitorial services-carousel",
     description:
-      "Experience unmatched cleanliness with our office cleaning and janitorial services. Our expert team ensures every workspace is spotless and hygienic, using eco-friendly products for daily upkeep.",
+      "Experience unmatched cleanliness with our office cleaning and janitorial services-carousel. Our expert team ensures every workspace is spotless and hygienic, using eco-friendly products for daily upkeep.",
     shortDescription:
-      "Professional cleaning services for a pristine and hygienic office environment.",
+      "Professional cleaning services-carousel for a pristine and hygienic office environment.",
     cta: "learn more",
   },
 ].map((service) => ({

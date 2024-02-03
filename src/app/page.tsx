@@ -1,11 +1,12 @@
-import { Services, VideoBg } from "@/components";
+import { OurVision, ServicesCarousel, VideoBg } from "@/components";
 import { cleaningServices } from "@/constants/constants";
 
 export default function Home() {
   return (
     <>
       <VideoBg />
-      <Services cards={cleaningServices} />
+      <OurVision />
+      <ServicesCarousel cards={cleaningServices} />
     </>
   );
 }
