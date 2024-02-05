@@ -70,3 +70,43 @@ export const cleaningServices = [
   ...service,
   slug: generateSlug(service.service),
 }));
+
+export const cardDetails = [
+  {
+    imgUrl: "/logos/ameritech-632.svg",
+    title: "Text 1",
+  },
+  {
+    imgUrl: "/logos/clean-system-3.svg",
+    title: "Text 2",
+  },
+
+  {
+    imgUrl: "/logos/feedfall-3.svg",
+    title: "Text 3",
+  },
+  {
+    imgUrl: "/logos/i-o-data-logo.svg",
+    title: "Text 4",
+  },
+  {
+    imgUrl: "/logos/readwrite.svg",
+    title: "Text 5",
+  },
+  {
+    imgUrl: "/logos/unihold-canada.svg",
+    title: "Text 6",
+  },
+  {
+    imgUrl: "/logos/tesla-9.svg",
+    title: "Text 7",
+  },
+  {
+    imgUrl: "/logos/farmer-mac.svg",
+    title: "Text 8",
+  },
+  {
+    imgUrl: "/logos/park-inn.svg",
+    title: "Text 9",
+  },
+];
