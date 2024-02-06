@@ -1,4 +1,5 @@
 import {
+  About,
   BrandCarousel,
   OurVision,
   ServicesCarousel,
@@ -13,6 +14,7 @@ export default function Home() {
       <OurVision />
       <BrandCarousel />
       <ServicesCarousel cards={cleaningServices} />
+      <About />
     </>
   );
 }

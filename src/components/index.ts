@@ -7,3 +7,4 @@ export * from "./services-carousel/services-carousel";
 export * from "./our-vision/our-vision";
 export * from "./brand-carousel/brand-carousel";
 export * from "./brand-carousel-item/brand-carousel-item";
+export * from "./about/about";
