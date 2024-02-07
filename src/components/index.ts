@@ -8,3 +8,4 @@ export * from "./our-vision/our-vision";
 export * from "./brand-carousel/brand-carousel";
 export * from "./brand-carousel-item/brand-carousel-item";
 export * from "./about/about";
+export * from "./footer/footer";

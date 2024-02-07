@@ -24,9 +24,13 @@ export function NavLink() {
         <div
           key={link.id}
           onMouseEnter={() =>
-            setIsServicesHovered(link.children === "Services")
+            width && width < 768
+              ? null
+              : setIsServicesHovered(link.children === "Services")
           }
-          onMouseLeave={() => setIsServicesHovered(false)}
+          onMouseLeave={() =>
+            width && width < 768 ? null : setIsServicesHovered(false)
+          }
         >
           <Link className={styles["nav-link"]} href={link.link}>
             {link.children === "Services" ? (

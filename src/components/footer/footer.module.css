@@ -1,0 +1,34 @@
+.footer {
+    background-color: var(--white);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons svg {
+    margin-right: 20px;
+}
+
+.links {
+    margin: 20px 0;
+}
+
+.link {
+    margin-right: 20px;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.copyright {
+    text-align: center;
+    color: var(--green);
+}
+
+@media (min-width: 768px) {
+    .icons svg,
+    .link {
+        margin-right: 30px;
+    }
+}

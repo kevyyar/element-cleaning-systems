@@ -1,5 +1,17 @@
-/* TABLET VIEWPORT */
-.main-nav {
+.main-nav-transparent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-in;
+  z-index: 100;
+}
+
+.main-nav-white {
+  background-color: yellow;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,34 +24,34 @@
 }
 
 .mobile-menu {
-    background-color: var(--green);
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    padding: 40px 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(-180%);
-    z-index: -1;
+  background-color: var(--green);
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-180%);
+  z-index: -1;
 }
 
 .button {
-    background-color: var(--white);
-    color: var(--green);
+  background-color: var(--white);
+  color: var(--green);
 }
 
 .mobile-menu.open {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .link:hover {
-    background-color: #FFD124;
+  background-color: #ffd124;
 }
 
 @media (min-width: 768px) {
-    .main-nav {
-       padding: 15px 8px;
-        justify-content: space-evenly;
-    }
+  .main-nav {
+    padding: 15px 8px;
+    justify-content: space-evenly;
+  }
 }

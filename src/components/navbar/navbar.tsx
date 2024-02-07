@@ -1,15 +1,18 @@
 "use client";
 
-import styles from "./navbar.module.css";
 import { Button, NavLink } from "@/components";
-import { useState } from "react";
+import { useScreenSize } from "@/components/hooks/useScreenSize";
 import Image from "next/image";
 import Link from "next/link";
-import { useScreenSize } from "@/components/hooks/useScreenSize";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
+import styles from "./navbar.module.css";
 
 export function Navbar() {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+  const pathname = usePathname();
 
   const { width } = useScreenSize();
 
@@ -20,7 +23,13 @@ export function Navbar() {
   };
 
   return (
-    <nav className={styles["main-nav"]}>
+    <nav
+      className={
+        pathname === "/"
+          ? styles["main-nav-transparent"]
+          : styles["main-nav-white"]
+      }
+    >
       <Link href={"/"}>
         <Image
           src={"/images/ecs-logo-white.svg"}

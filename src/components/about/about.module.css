@@ -51,6 +51,12 @@
   margin-top: 25px;
 }
 
+@media (min-width: 768px) {
+  .about-content  img {
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 1024px) {
   .about-content {
     flex-direction: row;
